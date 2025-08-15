@@ -16,8 +16,10 @@ function App() {
   return (
     <div style={{
       minHeight: '100vh',
+      width: '100vw',
       background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%)',
-      padding: '20px'
+      padding: '20px',
+      boxSizing: 'border-box'
     }}>
       <div style={{
         textAlign: 'center',
@@ -31,7 +33,7 @@ function App() {
           marginBottom: '10px',
           letterSpacing: '2px'
         }}>
-          💬 Real Time Chat Application
+           Real Time Chat Application
         </h1>
         <p style={{
           fontSize: '18px',
@@ -83,7 +85,7 @@ function App() {
                 e.target.style.transform = 'translateY(0)';
               }}
             >
-              🔐 Back to Login
+               Back to Login
             </button>
           </div>
         </div>
@@ -124,7 +126,7 @@ function App() {
                 e.target.style.transform = 'translateY(0)';
               }}
             >
-              ✨ Create Account
+               Create Account
             </button>
           </div>
         </div>

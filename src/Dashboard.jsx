@@ -111,7 +111,7 @@ function Dashboard() {
               fontSize: '32px',
               marginBottom: '40px',
               fontWeight: 'bold'
-            }}>🏠 Main Dashboard</h3>
+            }}>Main Dashboard</h3>
             
             <div style={{
               display: 'grid',
@@ -125,7 +125,7 @@ function Dashboard() {
                 onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
                 onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
               >
-                👥 Manage Friends
+                Manage Friends
               </button>
               
               <button 
@@ -134,7 +134,7 @@ function Dashboard() {
                 onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
                 onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
               >
-                💬 Open Chat
+                Open Chat
               </button>
               
               <button 
@@ -143,7 +143,7 @@ function Dashboard() {
                 onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
                 onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
               >
-                ✏️ Edit Profile
+                Edit Profile
               </button>
               
               <button 
@@ -152,7 +152,7 @@ function Dashboard() {
                 onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
                 onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
               >
-                🔑 Change Password
+                Change Password
               </button>
             </div>
             
@@ -162,7 +162,7 @@ function Dashboard() {
               onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
               onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
             >
-              🚪 Logout
+              Logout
             </button>
           </div>
         )}
@@ -180,7 +180,7 @@ function Dashboard() {
               textAlign: 'center',
               marginBottom: '25px',
               fontSize: '24px'
-            }}>👤 Edit Profile</h3>
+            }}>Edit Profile</h3>
             
             <form onSubmit={handleProfileSubmit}>
               <div style={{ marginBottom: '20px' }}>
@@ -189,7 +189,7 @@ function Dashboard() {
                   marginBottom: '8px',
                   fontSize: '14px',
                   fontWeight: '500'
-                }}>📝 Name:</label>
+                }}>Name:</label>
                 <input
                   type="text"
                   value={profileData.name}
@@ -214,7 +214,7 @@ function Dashboard() {
                   marginBottom: '8px',
                   fontSize: '14px',
                   fontWeight: '500'
-                }}>📧 Email:</label>
+                }}>Email:</label>
                 <input
                   type="email"
                   value={profileData.email}
@@ -236,7 +236,7 @@ function Dashboard() {
               
               <div style={{ display: 'flex', gap: '10px' }}>
                 <button type="submit" style={{...successButton, flex: 1}}>
-                  ✅ Update Profile
+                  Update Profile
                 </button>
                 <button type="button" style={{...secondaryButton, flex: 1}} onClick={() => setShowProfile(false)}>
                   ← Back
@@ -259,7 +259,7 @@ function Dashboard() {
               textAlign: 'center',
               marginBottom: '25px',
               fontSize: '24px'
-            }}>🔐 Change Password</h3>
+            }}>Change Password</h3>
             
             <form onSubmit={handlePasswordSubmit}>
               <div style={{ marginBottom: '20px' }}>
@@ -268,7 +268,7 @@ function Dashboard() {
                   marginBottom: '8px',
                   fontSize: '14px',
                   fontWeight: '500'
-                }}>🔒 Current Password:</label>
+                }}>Current Password:</label>
                 <input
                   type="password"
                   value={passwordData.currentPassword}
@@ -294,7 +294,7 @@ function Dashboard() {
                   marginBottom: '8px',
                   fontSize: '14px',
                   fontWeight: '500'
-                }}>🆕 New Password:</label>
+                }}>New Password:</label>
                 <input
                   type="password"
                   value={passwordData.newPassword}
@@ -316,7 +316,7 @@ function Dashboard() {
               
               <div style={{ display: 'flex', gap: '10px' }}>
                 <button type="submit" style={{...warningButton, flex: 1}}>
-                  🔄 Change Password
+                  Change Password
                 </button>
                 <button type="button" style={{...secondaryButton, flex: 1}} onClick={() => setShowChangePassword(false)}>
                   ← Back
@@ -340,7 +340,7 @@ function Dashboard() {
             boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
             zIndex: 1000
           }}>
-            {message.includes('successfully') ? '✅' : '❌'} {message}
+            {message.includes('successfully') ? '' : ''} {message}
           </div>
         )}
       </div>
@@ -363,7 +363,7 @@ function Dashboard() {
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text'
       }}>
-        🎉 Welcome to Dashboard
+         Welcome to Dashboard
       </h2>
       
       {/* Navigation */}

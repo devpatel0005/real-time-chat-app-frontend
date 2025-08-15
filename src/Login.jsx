@@ -48,7 +48,6 @@ function Login({ onLogin, onForgotPassword }) {
             fontSize: '36px',
             boxShadow: '0 10px 30px rgba(102, 126, 234, 0.3)'
           }}>
-            🔐
           </div>
           <h2 style={{
             fontSize: '32px',
@@ -74,14 +73,6 @@ function Login({ onLogin, onForgotPassword }) {
               color: '#4a5568'
             }}>Email Address</label>
             <div style={{ position: 'relative' }}>
-              <span style={{
-                position: 'absolute',
-                left: '16px',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                fontSize: '18px',
-                color: '#a0aec0'
-              }}>📧</span>
               <input
                 type="email"
                 value={username}
@@ -89,7 +80,7 @@ function Login({ onLogin, onForgotPassword }) {
                 required
                 style={{
                   width: '100%',
-                  padding: '16px 16px 16px 50px',
+                  padding: '16px',
                   border: '2px solid #e2e8f0',
                   borderRadius: '12px',
                   fontSize: '16px',
@@ -115,14 +106,6 @@ function Login({ onLogin, onForgotPassword }) {
               color: '#4a5568'
             }}>Password</label>
             <div style={{ position: 'relative' }}>
-              <span style={{
-                position: 'absolute',
-                left: '16px',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                fontSize: '18px',
-                color: '#a0aec0'
-              }}>🔒</span>
               <input
                 type="password"
                 value={password}
@@ -130,7 +113,7 @@ function Login({ onLogin, onForgotPassword }) {
                 required
                 style={{
                   width: '100%',
-                  padding: '16px 16px 16px 50px',
+                  padding: '16px',
                   border: '2px solid #e2e8f0',
                   borderRadius: '12px',
                   fontSize: '16px',
@@ -190,9 +173,6 @@ function Login({ onLogin, onForgotPassword }) {
             textAlign: 'center',
             fontWeight: '500'
           }}>
-            <span style={{ marginRight: '8px' }}>
-              {message.includes('successful') ? '✅' : '❌'}
-            </span>
             {message}
           </div>
         )}

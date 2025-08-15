@@ -37,7 +37,7 @@ function Signup() {
           marginBottom: '30px',
           fontSize: '28px',
           fontWeight: 'bold'
-        }}>✨ Create Account</h2>
+        }}>Create Account</h2>
         
         <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: '20px' }}>
@@ -46,7 +46,7 @@ function Signup() {
               marginBottom: '8px',
               fontSize: '14px',
               fontWeight: '500'
-            }}>📧 Email:</label>
+            }}>Email:</label>
             <input
               type="email"
               value={email}
@@ -73,7 +73,7 @@ function Signup() {
               marginBottom: '8px',
               fontSize: '14px',
               fontWeight: '500'
-            }}>🔒 Password:</label>
+            }}>Password:</label>
             <input
               type="password"
               value={password}
@@ -112,7 +112,7 @@ function Signup() {
             onMouseOver={(e) => e.target.style.backgroundColor = '#0056b3'}
             onMouseOut={(e) => e.target.style.backgroundColor = '#007bff'}
           >
-            🎉 Create Account
+            Create Account
           </button>
         </form>
         
@@ -126,7 +126,7 @@ function Signup() {
             marginBottom: '15px',
             fontSize: '14px'
           }}>
-            ✅ {message}
+            {message}
           </p>
         )}
         
@@ -135,7 +135,7 @@ function Signup() {
           fontSize: '14px',
           opacity: 0.9
         }}>
-          <p>Already have an account? Login above! 👆</p>
+          <p>Already have an account? Login above!</p>
         </div>
       </div>
     </div>

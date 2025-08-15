@@ -243,7 +243,7 @@ function Chat() {
         backgroundColor: '#fff',
         borderRight: '1px solid #ddd'
       }}>
-        <h4 style={{ marginBottom: '20px', color: '#333' }}>💬 Chats</h4>
+        <h4 style={{ marginBottom: '20px', color: '#333' }}> Chats</h4>
         
         {/* Friends */}
         <div style={{ marginBottom: '20px' }}>
